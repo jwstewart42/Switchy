@@ -490,7 +490,7 @@ def toShortDateTimeString(dateTime)
 def logEvent(text, alwaysLog = false)
 {
 	// set to false to disable general logging
-	def isLoggingEnabled = (true || alwaysLog)
+	def isLoggingEnabled = (false || alwaysLog)
     if (isLoggingEnabled)
     {
     	log.debug(text)
